@@ -14,20 +14,20 @@ read -rp "Enter your choice [1-5]: " choice
 case "$choice" in
     1)
         echo "Installing Arch..."
-        sh <(curl -Lks raw.githubusercontent.com/DerJimno/arch-installation/main/base)
+        sh <(curl -Lks raw.githubusercontent.com/DerMenaouer/arch-installation/main/base)
         ;;
     2)
         echo "Setting up Arch Packages"
-        sh <(curl -Lks raw.githubusercontent.com/DerJimno/arch-installation/main/packages)
-        sh <(curl -Lks raw.githubusercontent.com/DerJimno/arch-installation/main/import-dotfiles)
+        sh <(curl -Lks raw.githubusercontent.com/DerMenaouer/arch-installation/main/packages)
+        sh <(curl -Lks raw.githubusercontent.com/DerMenaouer/arch-installation/main/import-dotfiles)
         ;;
     3)
         echo "Setting up Aur Packages"
-        sh <(curl -Lks raw.githubusercontent.com/DerJimno/arch-installation/main/aur-packages)
+        sh <(curl -Lks raw.githubusercontent.com/DerMenaouer/arch-installation/main/aur-packages)
         ;;
     4)
         echo "Setting up Services"
-        sh <(curl -Lks raw.githubusercontent.com/DerJimno/arch-installation/main/services)
+        sh <(curl -Lks raw.githubusercontent.com/DerMenaouer/arch-installation/main/services)
         ;;
     5)
         echo "Exiting."
