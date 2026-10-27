@@ -2,7 +2,7 @@
 
 # Add uinput and logged user to groups
 sudo groupadd -r uinput
-sudo usermod -aG audio,video,optical,storage,input,uinput $USER
+sudo usermod -aG audio,video,render,optical,storage,input,uinput $USER
 
 # Create udev rule for uinput
 echo 'KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"' | \
